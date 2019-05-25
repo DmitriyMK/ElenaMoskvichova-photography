@@ -45,11 +45,19 @@
 </head>
 
 <body>
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<i></i>
-	</div>
+	</div> -->
+
 
 	<div class="main__wrap">
+
+		<div id="preloader">
+			<div class="loader">
+				<span data-flicker-0="LOAD" data-flicker-1="ING" class="loader-text">LOADING</span>
+			</div>
+		</div>
+
 
 		<header class="header">
 			<div class="container-fluid shadow__top">
@@ -163,82 +171,138 @@
 			</div>
 		</header>
 
+
 		<main>
 
-			<section class="container-fluid carousel__block">
-				<ul class="carousel" role="listbox">
+			<section class="container-fluid ">
+				<div class="carousel__block">
+					<ul class="slider carousel" role="listbox">
 
-					<li class="carousel__slide">
-						<div class="carousel__block">
-							<img class="carousel__img" src="./img/photo/0carousel/1.jpg"
-								alt="Фотограф - Елена Москвичева">
-							<div class="js-splitme">
-								<p class="carousel__text">Детство — это когда бежишь потому что это игра, а не здоровый образ жизни</p>
+						<li class="carousel__slide">
+							<div class="carousel__block">
+								<img class="carousel__img" src="./img/photo/0carousel/1.jpg"
+									alt="Фотограф - Елена Москвичева">
+								<div class="js-splitme">
+									<p class="carousel__text">Детство — это когда бежишь потому что это игра, а не здоровый образ жизни</p>
+								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
-					<li class="carousel__slide">
-						<div class="carousel__block">
-							<img class="carousel__img" src="./img/photo/0carousel/2.jpg"
-								alt="Фотограф - Елена Москвичева">
-							<div class="js-splitme">
-								<p class="carousel__text">В детстве для счастья было достаточно одного мороженого.</p>
+						<li class="carousel__slide">
+							<div class="carousel__block">
+								<img class="carousel__img" src="./img/photo/0carousel/2.jpg"
+									alt="Фотограф - Елена Москвичева">
+								<div class="js-splitme">
+									<p class="carousel__text">В детстве для счастья было достаточно одного мороженого.
+									</p>
+								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
-					<li class="carousel__slide">
-						<div class="carousel__block">
-							<img class="carousel__img" src="./img/photo/0carousel/3.jpg"
-								alt="Фотограф - Елена Москвичева">
-							<div class="js-splitme">
-								<p class="carousel__text">Детство это когда деревья-живые великаны, а до луны можно дотронуться рукой.</p>
+						<li class="carousel__slide">
+							<div class="carousel__block">
+								<img class="carousel__img" src="./img/photo/0carousel/3.jpg"
+									alt="Фотограф - Елена Москвичева">
+								<div class="js-splitme">
+									<p class="carousel__text">В детстве для счастья было достаточно одного мороженого.</p>
+								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
-					<li class="carousel__slide">
-						<div class="carousel__block">
-							<img class="carousel__img" src="./img/photo/0carousel/5.jpg"
-								alt="Фотограф - Елена Москвичева">
-							<div class="js-splitme">
-								<p class="carousel__text">Детство — это когда ты безумно счастлив из-за того что мыльный
-									пузырь коснулся земли, и не лопнул</p>
+						<li class="carousel__slide">
+							<div class="carousel__block">
+								<img class="carousel__img" src="./img/photo/0carousel/5.jpg"
+									alt="Фотограф - Елена Москвичева">
+								<div class="js-splitme">
+									<p class="carousel__text">Детство — это когда ты безумно счастлив из-за того что мыльный пузырь коснулся земли, и не лопнул</p>
+								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
-					<li class="carousel__slide">
-						<div class="carousel__block">
-							<img class="carousel__img" src="./img/photo/0carousel/6.jpg"
-								alt="Фотограф - Елена Москвичева">
-							<div class="js-splitme">
-								<p class="carousel__text">Детство – это когда ты ложишься спать с игрушкой и делаешь
-									так, чтобы игрушке было удобно.</p>
+						<li class="carousel__slide">
+							<div class="carousel__block">
+								<img class="carousel__img" src="./img/photo/0carousel/6.jpg"
+									alt="Фотограф - Елена Москвичева">
+								<div class="js-splitme">
+									<p class="carousel__text">Детство – это когда ты ложишься спать с игрушкой и делаешь так, чтобы игрушке было удобно.</p>
+								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
-				</ul>
+					</ul>
+
+
+					<div class="progress">
+						<div class="progress__item">
+							<p>Slide 1</p>
+							<span data-slick-index="0" class="progress__bar"></span>
+						</div>
+						<div class="progress__item">
+							<p>Slide 2</p>
+							<span data-slick-index="1" class="progress__bar"></span>
+						</div>
+						<div class="progress__item">
+							<p>Slide 3</p>
+							<span data-slick-index="2" class="progress__bar"></span>
+						</div>
+						<div class="progress__item">
+							<p>Slide 4</p>
+							<span data-slick-index="3" class="progress__bar"></span>
+						</div>
+						<div class="progress__item">
+							<p>Slide 5</p>
+							<span data-slick-index="4" class="progress__bar"></span>
+						</div>
+					</div>
+
+				</div>
 			</section>
 
 
+			<section class="container">
+				<div class="title__wrap">
+					<h2 class="section__title">Детский и семейный фотограф</h2>
+					<p style="font-size: 24px; font-weight: 700">Пиветствие и какие виды сьемок есть</p>	
+					<p style="font-size: 24px; font-weight: 700">Может скопировать сюда страницу обо мне</p>	
+
+
+					<strong>ну или что то такое </strong>
+					<p>Какие виды фотосессий мы проводим?
+						В Киеве мы проводим большое количество разных типов фотопроектов. Это могут быть как индивидуальные фотосессии,
+						так и групповые. Локации для съемок мы также задействуем любого формата: это может быть как фотосессия в
+						студии, так и фотосессия на природе или улице. В своей работе мы привлекаем лучших специалистов в области
+						визажа, макияжа и декорации. Исходя из всего перечисленного, в основном, в Киеве, мы проводим студийные
+						фотосессии с макияжем и прической. Все виды фотосъемки условно можно разделить на следующие категории:</p>
+
+						https://aperepelitsa.com.ua/photoshoot/
+
+					<p>https://yanatkachenko.com/</p>
+
+
+					<p>
+						Детская фотосъемка семейная фотосессия Киев.
+
+						Как много у вас в альбоме фотографий на которых вы вместе, всей семьей? Зачастую семейные снимки самые редкие,
+						но самые дорогие. Украсьте альбом или свой интерьер яркими, эмоциональными или душевными семейными
+						фотографиями.
+
+						К тому же семейная фотосессия — это замечательный повод побыть вместе всей семьей. Пригласите всех кто вам
+						дорог: бабушек, дедушек, крестных, теть, дядь…и проведите время вместе. Вам не нужно позировать, просто будьте
+						собою и наслаждайтесь… При этом, съемка может проходить в любом удобном для вас месте — дома, на даче, в гостях
+						у бабушки, а если захочется отстраниться от своего интерьера, я посоветую подходящую фотостудию или отправимся
+						искать цветущие поля:)</p>
+				</div>
+			</section>
+
+			
 			<section class="container-fluid portfolio">
 				<div class="title__wrap">
-					<h3 class="section__title">Портфолио работ</h3>
+					<h2 class="section__title">Портфолио работ</h2>
 				</div>
 
-				<div class="portfolio__list filters" id="filter">
-					<button class="portfolio__list-btn fil-cat" data-rel="all">Вся съемкa</button>
-					<button class="portfolio__list-btn fil-cat" data-rel="studio">Студия</button>
-					<button class="portfolio__list-btn fil-cat" data-rel="lifestyle">Lifestyle</button>
-					<button class="portfolio__list-btn fil-cat" data-rel="reportage">Репортаж</button>
-				</div>
 
 				<div class="gallery" id="gallery">
 					<div class="grid" id="grid">
-						<div class="grid-sizer"></div>
 
 						<figure class="grid-item lifestyle all">
 							<div class="hovereffect">
@@ -851,7 +915,7 @@
 
 			<section class="container review">
 				<div class="title__wrap">
-					<h3 class="section__title">Отзывы клиентов</h3>
+					<h2 class="section__title">Отзывы клиентов</h2>
 				</div>
 
 				<ul class="review__slider slider">
@@ -892,17 +956,33 @@
 					</li>
 				</ul>
 			</section>
+
+
+			<section class="container">
+				<div class="title__wrap">
+					<h2 class="section__title">Порядок работы</h2>
+					<p>Порядок работы с фотографом</p>	
+				</div>
+			</section>
+
+
+			<section class="container news">
+				<div class="title__wrap">
+					<h2 class="section__title">Последнее из блога</h2>
+				</div>
+			</section>
 		</main>
 
 		<div class="scrollup">
-			<svg version="1.1" id="arrow-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-				x="0px" y="0px" viewBox="-100 -100 400 400" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+			<svg version="1.1" id="arrow-top" xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-100 -100 400 400"
+				style="enable-background:new 0 0 256 256;" xml:space="preserve">
 				<g>
 					<circle cx="100" cy="100" r="180" stroke="#ededed" fill="#f9f9f9" stroke-width="20"></circle>
 					<path id="path-anim" d="M 100,-80 A180,180   0  0, 1 137.1589814449927,276.12271318024455"
 						stroke="#FF5252" fill="#f9f9f9" stroke-width="23"></path>
-					<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 " fill="#FF5252"
-						transform="translate(   45,30),
+					<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 "
+						fill="#FF5252" transform="translate(   45,30),
 					scale(0.45)"></polygon>
 				</g>
 			</svg>
@@ -961,7 +1041,7 @@
 
 	<div class="remodal remodal-common" data-remodal-id="modal-thanks">
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<h3 class="thanks__title">Письмо отправлено:)</h3>
+		<p class="thanks__title">Письмо отправлено:)</p>
 		<p class="thanks__text">Я свяжусь с Вами <br>в ближайшее время.</p>
 	</div>
 
@@ -971,14 +1051,10 @@
 	<script src="./js/libs/fancybox.js"></script>
 	<script src="./js/libs/slick.js"></script>
 	<script src="./js/libs/remodal.js"></script>
-	<script src="./js/libs/masonry.pkgd.min.js"></script>
-	<script src="./js/libs/cssrelpreload.js"></script>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
 
 	<script src="./js/libs/jquery.mask.min.js"></script>
-	<script src="./js/libs/jquery.validate.min.js"></script>
 	<script src="./js/libs/jquery.nicescroll.min.js"></script>
 	<script src="./js/libs/splitHTML.js"></script>
 	<script src="./js/libs/scrollUp.js"></script>

@@ -265,7 +265,7 @@
 
     .carousel .carousel-inner {
         .item {
-            height: 400px !important;
+            height: 400px;
         }
     }
 
@@ -456,7 +456,7 @@
         }
     }
 
-    .carousel {
+    .carousel__block {
         display: none;
     }
 
