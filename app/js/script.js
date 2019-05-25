@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 		$("body").niceScroll({
 			scrollspeed: 60,
-			mousescrollstep: 60,
+			mousescrollstep: 70,
 			smoothscroll: true,
 			cursorwidth: 6,
 			cursorborder: 0,
