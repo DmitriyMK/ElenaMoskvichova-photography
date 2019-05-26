@@ -1438,9 +1438,9 @@ textarea:required:valid {
     padding: 15px 25px;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translateX(-40%);
-        -ms-transform: translateX(-40%);
-            transform: translateX(-40%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 2.25rem;
     -webkit-user-select: text;
        -moz-user-select: text;
@@ -1460,9 +1460,6 @@ textarea:required:valid {
     opacity: 0; }
     @media (max-width: 1024px) {
       .carousel__text {
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
         opacity: 1;
         bottom: 60px; } }
     .slick-active .carousel__text {
@@ -1555,8 +1552,8 @@ textarea:required:valid {
     display: block;
     max-width: 100%;
     height: auto;
-    -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75); }
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35); }
 
 .hello__content {
   max-width: 600px;
@@ -1599,6 +1596,10 @@ textarea:required:valid {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }

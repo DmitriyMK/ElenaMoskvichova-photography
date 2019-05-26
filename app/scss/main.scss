@@ -937,7 +937,7 @@ $background-color: $grayLight;
         padding: 15px 25px;
         bottom: 0;
         left: 50%;
-        transform: translateX(-40%);
+        transform: translateX(-50%);
         font-size: rem(36);
         user-select: text;
         z-index: 3;
@@ -953,7 +953,6 @@ $background-color: $grayLight;
         opacity: 0;
 
         @media (max-width: 1024px) {
-            transform: translateX(-50%);
             opacity: 1;
             bottom: 60px;
         }
@@ -1064,7 +1063,7 @@ $background-color: $grayLight;
             display: block;
             max-width: 100%;
             height: auto;
-            box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0 5px 25px rgba(0,0,0,.35);
         }
     }
     &__content {
@@ -1113,6 +1112,7 @@ $background-color: $grayLight;
 .grid {
     max-width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
