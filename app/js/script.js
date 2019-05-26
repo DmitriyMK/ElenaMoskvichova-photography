@@ -2,20 +2,19 @@ $(document).ready(function () {
 
 	if (document.documentElement.clientWidth > 1025) {
 
-		$("body").niceScroll({
-			scrollspeed: 60,
-			mousescrollstep: 70,
-			smoothscroll: true,
-			cursorwidth: 6,
-			cursorborder: 0,
-			cursorcolor: '#FF5252',
-			cursoropacitymin: 1,
-			autohidemode: true,
-			horizrailenabled: false,
-			zindex: "9999"
-		});
+		// $("body").niceScroll({
+		// 	scrollspeed: 60,
+		// 	mousescrollstep: 70,
+		// 	smoothscroll: true,
+		// 	cursorwidth: 6,
+		// 	cursorborder: 0,
+		// 	cursorcolor: '#FF5252',
+		// 	cursoropacitymin: 1,
+		// 	autohidemode: true,
+		// 	horizrailenabled: false,
+		// 	zindex: "9999"
+		// });
 
-		$('html').addClass('no-overflow-y');
 
 		var els = document.querySelectorAll(".js-splitme");
 		[].forEach.call(els, function (el) {
@@ -42,8 +41,8 @@ $(document).ready(function () {
 			});
 
 			TweenMax.to(cardWrap1, 0.5, {
-				rotationY: 10 * decimalX,
-				rotationX: -10 * decimalY,
+				rotationY: -10 * decimalX,
+				rotationX: 10 * decimalY,
 				ease: Quad.easeOut,
 				transformPerspective: 1200,
 				transformOrigin: "center"
@@ -57,6 +56,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
 	objectFitImages();
+	
 
 
 	$('.carousel').each(function () {
@@ -69,9 +69,6 @@ $(document).ready(function () {
 			swipeToSlide: true,
 			cssEase: 'ease-in',
 			lazyLoad: 'progressive',
-			// autoplay: true,
-			// autoplaySpeed: 3000,
-			// pauseOnHover: true,
 			infinite: true
 		});
 

@@ -160,6 +160,10 @@
         }
     }
 
+    .grid-item {
+        width: 30%;
+    }
+
     .button__container {
         top: 26px;
     }
@@ -326,9 +330,8 @@
         font-size: 20px;
     }
 
-    .grid-sizer,
     .grid-item {
-        width: 30%;
+        width: 48%;
     }
 
     .aboutME__article {
@@ -343,7 +346,6 @@
 
     .blog__article {
 
-        .grid-sizer,
         .blog-item {
             width: 31%;
         }
@@ -465,9 +467,8 @@
         font-size: 18px;
     }
 
-    .grid-sizer,
     .grid-item {
-        width: 48%;
+        width: 98%;
     }
 
     .hovereffect .info {
@@ -510,7 +511,6 @@
             font-size: rem(28);
         }
 
-        .grid-sizer,
         .blog-item {
             width: 48%;
         }
@@ -551,7 +551,6 @@
         -webkit-text-size-adjust: none;
     }
 
-    .grid-sizer,
     .grid-item {
         width: 100%;
         margin-left: 0%;
