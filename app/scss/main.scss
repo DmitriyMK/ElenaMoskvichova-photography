@@ -8,8 +8,14 @@
 @import "_fontello";
 @import "bourbon";
 
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+
+}
 body {
     min-width: 320px;
+    height: 100%;
     padding-right: 0 !important;
     font-family: $mainFont;
     font-size: $fontSize;
@@ -113,7 +119,11 @@ a:active {
 .main__wrap {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
 }
 
 
@@ -980,7 +990,6 @@ $background-color: $grayLight;
             bottom: 60px;
         }
 
-
         .slick-active & {
             opacity: 1;
             bottom: 60px;
@@ -1004,6 +1013,11 @@ $background-color: $grayLight;
         position: relative;
         height: calc(100vh - 90px);
         max-height: 860px;
+        
+
+        @media (min-width: 1025px) {
+            min-height: 600px;
+        }
 
 
         .progress {
@@ -1044,6 +1058,10 @@ $background-color: $grayLight;
                 height: 4px;
             }
         }
+    }
+
+    .position3 img {
+        object-position: 50% 35%;
     }
 }
 
@@ -1692,8 +1710,9 @@ $background-color: $grayLight;
 }
 
 .blog__article {
+    padding-top: 60px;
     padding-bottom: 40px;
-    font-size: rem(24);
+    font-size: rem(20);
     color: #000;
     text-align: center;
 
@@ -1714,7 +1733,7 @@ $background-color: $grayLight;
 
     .title {
         padding: 25px 0;
-        font-size: rem(36);
+        font-size: rem(24);
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -1742,6 +1761,15 @@ $background-color: $grayLight;
         margin-left: 1%;
         margin-right: 1%;
         margin-bottom: 1%;
+
+        &-full {
+            width: 48%;
+
+            @media (max-width: 767px) {
+                width: 98%;
+            }
+
+        }
     }
 }
 
@@ -1798,9 +1826,7 @@ $background-color: $grayLight;
         height: 100%;
     }
     .footer {
-        width: 100vw;
-        position: absolute;
-        bottom: -180px;
+        margin-top: 120px;
     }
 }
 

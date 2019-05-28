@@ -1,25 +1,12 @@
 $(document).ready(function () {
 
 	if (document.documentElement.clientWidth > 1025) {
-
-		// $("body").niceScroll({
-		// 	scrollspeed: 60,
-		// 	mousescrollstep: 70,
-		// 	smoothscroll: true,
-		// 	cursorwidth: 6,
-		// 	cursorborder: 0,
-		// 	cursorcolor: '#FF5252',
-		// 	cursoropacitymin: 1,
-		// 	autohidemode: true,
-		// 	horizrailenabled: false,
-		// 	zindex: "9999"
-		// });
-
-
+		
 		var els = document.querySelectorAll(".js-splitme");
 		[].forEach.call(els, function (el) {
 			el.outerHTML = Splitter(el.outerHTML, '<span class="letter">$</span>');
 		});
+		
 	};
 
 	if (document.documentElement.clientWidth > 768) {
@@ -58,7 +45,6 @@ $(document).ready(function () {
 	objectFitImages();
 	
 
-
 	$('.carousel').each(function () {
 		const $this = $(this);
 
@@ -95,12 +81,12 @@ $(document).ready(function () {
 
 		function interval() {
 			if
-				(($('.carousel .slick-track li[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-				progressBarIndex = $('.carousel .slick-track li[aria-hidden="false"]').data("slickIndex");
+				(($('.carousel .slick-track [data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+				progressBarIndex = $('.carousel .slick-track [aria-hidden="false"]').data("slickIndex");
 				startProgressbar();
 			}
 			else {
-				percentTime += 1 / (time + 15);
+				percentTime += 1 / (time + 25);
 				$('.inProgress' + progressBarIndex).css({
 					width: percentTime + "%"
 				});
@@ -197,11 +183,6 @@ $(document).ready(function () {
 
 
 
-$(window).on('resize orientationchange', function () {
-	$('.slider').slick('resize');
-});
-
-
 // /*PRELOADER*/
 $(window).load(function () {
 	$('#preloader').delay(300).fadeOut();
@@ -270,3 +251,6 @@ $(".contactForm").submit(function () {
 
 	return false;
 });
+
+
+window.console.log('Made with fun and love ❤️❤️❤️️');

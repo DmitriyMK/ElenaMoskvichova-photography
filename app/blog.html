@@ -37,23 +37,13 @@
 	</noscript>
 
 	<link rel="stylesheet" href="./css/main.css">
-
-	<!-- DEFER SCRIPT -->
-	<script defer src="./js/libs/fancybox.js"></script>
-	<script defer src="./js/libs/slick.js"></script>
-	<script defer src="./js/libs/remodal.js"></script>
-	<script defer src="./js/libs/masonry.pkgd.min.js"></script>
-	<script defer src="./js/libs/cssrelpreload.js"></script>
-	<script defer src="./js/libs/jquery.mask.min.js"></script>
-	<script defer src="./js/libs/jquery.validate.min.js"></script>
-	<!-- END DEFER SCRIPT -->
-
-
 </head>
 
 <body>
 	<div id="preloader">
-		<i></i>
+		<div class="loader">
+			<span data-flicker-0="LOAD" data-flicker-1="ING" class="loader-text">LOADING</span>
+		</div>
 	</div>
 
 	<div class="main__wrap inner__page">
@@ -217,6 +207,21 @@
 					</div>
 				</a>
 			</article>
+
+
+			<div class="scrollup">
+				<svg version="1.1" id="arrow-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					x="0px" y="0px" viewBox="-100 -100 400 400" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+					<g>
+						<circle cx="100" cy="100" r="180" stroke="#ededed" fill="#f9f9f9" stroke-width="20"></circle>
+						<path id="path-anim" d="M 100,-80 A180,180   0  0, 1 137.1589814449927,276.12271318024455"
+							stroke="#FF5252" fill="#f9f9f9" stroke-width="23"></path>
+						<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 "
+							fill="#FF5252" transform="translate(   45,30),
+					scale(0.45)"></polygon>
+					</g>
+				</svg>
+			</div>
 		</main>
 
 
@@ -275,10 +280,17 @@
 	</div>
 
 
+	<script src="./js/libs/cssrelpreload.js"></script>
 	<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="./js/libs/jquery.nicescroll.min.js"></script>
-	<script src="./js/libs/bootstrap.min.js"></script>
-
+	<script src="./js/libs/slick.js"></script>
+	<script src="./js/libs/ofi.min.js"></script>
+	<script src="./js/libs/fancybox.js"></script>
+	<script src="./js/libs/remodal.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="./js/libs/jquery.mask.min.js"></script>
+	<!-- <script src="./js/libs/jquery.nicescroll.min.js"></script> -->
+	<script src="./js/libs/splitHTML.js"></script>
+	<script src="./js/libs/scrollUp.js"></script>
 	<script src="./js/script.js"></script>
 
 	<script>

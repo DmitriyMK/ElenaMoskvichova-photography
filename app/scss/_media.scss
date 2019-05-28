@@ -206,6 +206,11 @@
         }
     }
 
+    .scrollup {
+        right: 10px;
+        bottom: 15px;
+    }
+
 }
 
 
@@ -335,7 +340,7 @@
     }
 
     .aboutME__article {
-        font-size: rem(22);
+        font-size: rem(20);
 
         .aboutME__article-picture {
             img {
@@ -345,6 +350,7 @@
     }
 
     .blog__article {
+        padding-top: 0;
 
         .blog-item {
             width: 31%;
@@ -353,7 +359,7 @@
 
     .blog {
         .article__title {
-            font-size: 56px;
+            font-size: rem(22);
         }
     }
 
@@ -375,26 +381,22 @@
     .textarea__group {
         font-size: 16px;
     }
-
 }
 
-
-@media only screen and (max-width : 569px) {
-    .blog {
-        .article__title {
-            font-size: 28px;
-        }
+@media only screen and (max-width: 767px) {
+    .carousel__text {
+        display: none;
+    }
+    .carousel .slick-prev {
+        left: 10px;
+    }
+    .carousel .slick-next {
+        right: 0;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-
-
-    .scrollup {
-        right: 10px;
-        bottom: 15px;
-    }
 
     .header {
         box-shadow: none;
@@ -416,8 +418,12 @@
         }
     }
 
+    .carousel__block {
+        height: calc(100vh - 180px);
+    }
+
     .contact__box {
-        margin-top: 30px;
+        margin-top: 12px;
         padding-right: 0;
 
         .btn {
@@ -431,11 +437,9 @@
         display: flex;
     }
 
-
     .button__container {
         top: 23px;
     }
-
 
     .header__logo--link {
         float: none;
@@ -459,9 +463,6 @@
         }
     }
 
-    .carousel__block {
-        display: none;
-    }
 
     .portfolio__list-btn {
         font-size: 18px;
@@ -508,7 +509,7 @@
         font-size: rem(20);
 
         .title {
-            font-size: rem(28);
+            font-size: rem(24);
         }
 
         .blog-item {
